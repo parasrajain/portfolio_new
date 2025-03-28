@@ -353,7 +353,7 @@ import { div } from "framer-motion/client";
 
 const Projects = () => {
   return (
-    <div className="relative min-h-screen w-full flex flex-col">
+    <div id="Projects" className="relative min-h-screen w-full flex flex-col">
       <div className="fixed inset-0 -z-10 h-full w-full overflow-hidden bg-black">
         <Squares
           speed={0.5}
@@ -583,7 +583,17 @@ const Projects = () => {
             </div>
           </div>
 
-          <button className="text-white">More..</button>
+          <button type="button" class="btnm">
+            <strong className="font-sans">More..</strong>
+            <div id="container-starsm">
+              <div id="starsm"></div>
+            </div>
+
+            <div id="glowm">
+              <div class="circlem"></div>
+              <div class="circlem"></div>
+            </div>
+          </button>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ import TiltedCard from "../components/TitleCard";
 
 const Home = () => {
   return (
-    <div className="bg-black relative h-screen w-full overflow-hidden">
+    <div className="bg-black relative h-screen w-full overflow-hidden" id="Home">
       {/* Background squares */}
       <div className="w-full h-screen">
         <Squares
