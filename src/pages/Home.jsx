@@ -1,3 +1,4 @@
+
 // import React from "react";
 // import Particles from "../components/Particles";
 // import ProfileImage from "../assets/ProfileImage.jpg";
@@ -9,12 +10,9 @@
 
 // const Home = () => {
 //   return (
-//     <div
-//       className="bg-black relative h-screen w-full overflow-hidden"
-//       id="Home"
-//     >
+//     <div className="bg-black relative h-screen w-full overflow-hidden" id="Home">
 //       {/* Background squares */}
-//       <div className="w-full h-screen">
+//       <div className="w-full h-full">
 //         <Squares
 //           speed={0.5}
 //           squareSize={40}
@@ -25,14 +23,14 @@
 //       </div>
 
 //       {/* Content container - Reversed order on mobile */}
-//       <div className="flex flex-col-reverse lg:flex-row absolute top-0 w-full h-full p-2 sm:p-5 gap-28 lg:gap-0 ">
-//         {/* Left side - Text content (now comes after image in DOM) */}
-//         <div className="lg:min-w-[60%] w-full lg:w-auto p-2 sm:p-5 flex items-center justify-center">
-//           <div className="flex mb-19 gap-8 sm:gap-10 flex-col text-3xl sm:text-4xl md:text-5xl mx-auto w-full md:w-[80%]">
-//             <div className="text-white text-center lg:text-left font-sans text-5xl font-bold lg:text-6xl">
+//       <div className="flex flex-col-reverse lg:flex-row absolute top-0 w-full h-full px-2  sm:p-4 gap-8 lg:gap-0 pt-16">
+//         {/* Left side - Text content */}
+//         <div className="lg:min-w-[60%] w-full lg:w-auto px-2 sm:p-5 flex items-center justify-center">
+//           <div className="flex mb-10 gap-6 sm:gap-10 flex-col text-2xl sm:text-3xl md:text-4xl mx-auto w-full md:w-[80%]">
+//             <div className="text-white text-center lg:text-left font-sans text-4xl font-bold lg:text-5xl">
 //               I'm Paras Rajain
 //             </div>
-//             <div className="text-white font-sans  font-bold">
+//             <div className="text-white font-sans font-bold">
 //               <RotatingText
 //                 texts={[
 //                   "Backend Developer",
@@ -41,7 +39,7 @@
 //                   "Web Developer",
 //                   "Programmer",
 //                 ]}
-//                 mainClassName="px-2 sm:px-3 md:px-4 bg-cyan-300 text-black overflow-hidden py-1 sm:py-2 justify-center rounded-lg w-full"
+//                 mainClassName="px-2 sm:px-3 md:px-4 bg-cyan-300 text-black overflow-hidden py-1 sm:py-1 justify-center rounded-lg w-full"
 //                 staggerFrom={"last"}
 //                 initial={{ y: "100%" }}
 //                 animate={{ y: 0 }}
@@ -52,35 +50,28 @@
 //                 rotationInterval={3000}
 //               />
 //             </div>
-//             {/* <button  className="btn rounded-sm max-w-[200px] mx-auto lg:mx-0 lg:h-[60px]">
-//               <i className="animation font-sans  font-bold"></i>My Resume
-//               <i className="animation"></i>
-//             </button> */}
-//             <a
-//               href="https://drive.google.com/file/d/1K7mD8Jwd_YZVMY53VS_8tIEiDju9ctog/view?usp=sharing" // Replace with your actual resume path
-//               target="_blank"
-//               rel="noopener noreferrer"
-//               className="inline-block" // Preserves your button styling
-//             >
-//               <button className="btn rounded-sm max-w-[200px] mx-auto lg:mx-0 lg:h-[60px]">
-//                 <i className="animation font-sans font-bold"></i>My Resume
-//                 <i className="animation"></i>
-//               </button>
-//             </a>
+//             <div className="flex justify-center">
+//               <a
+//                 href="https://drive.google.com/file/d/1K7mD8Jwd_YZVMY53VS_8tIEiDju9ctog/view?usp=sharing"
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="inline-block"
+//               >
+//                 <button className="btn rounded-sm max-w-[200px] lg:mx-0 lg:h-[60px]">
+//                   <i className="animation font-sans font-bold"></i>My Resume
+//                   <i className="animation"></i>
+//                 </button>
+//               </a>
+//             </div>
 //           </div>
 //         </div>
 
-//         {/* Right side - Image (now appears first on mobile) */}
-//         <div className="lg:min-w-[40%] w-full p-2 sm:p-5 flex items-center justify-center">
-//           <div className="max-w-[70%] sm:max-w-[60%] lg:max-w-[50%] mx-auto">
+//         {/* Right side - Image */}
+//         <div className="lg:min-w-[40%] w-full p-2 sm:p-5 flex items-center justify-center mt-26 md:mt-0">
+//           <div className="max-w-[70%] sm:max-w-[50%] lg:max-w-[50%] mx-auto">
 //             <div className="relative mx-auto">
 //               <Magnet padding={20} disabled={false} magnetStrength={5}>
-//                 <div className="bg-white rounded-sm ">
-//                   {/* <img 
-//                   className="rounded-sm p-2 sm:p-3.5 w-full h-auto" 
-//                   src={ProfileImage} 
-//                   alt="Profile" 
-//                 /> */}
+//                 <div className="bg-white rounded-sm">
 //                   <TiltedCard
 //                     imageSrc={ProfileImage}
 //                     altText="Paras Rajain"
@@ -114,30 +105,6 @@
 //                 </div>
 //               </Magnet>
 //             </div>
-//             {/* <Magnet padding={20} disabled={false} magnetStrength={5}>
-//               <div className="bg-white rounded-sm relative">
-//                 <img 
-//                   className="rounded-sm p-2 sm:p-3.5 w-full h-auto" 
-//                   src={ProfileImage} 
-//                   alt="Profile" 
-//                 />
-//                 <img
-//                   className="zigzag-icon"
-//                   src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/zigzags.png?alt=media&token=48c9c028-b893-457a-8394-fb2a7aa31824"
-//                   alt=""
-//                 />
-//                 <img
-//                   className="cube-icon"
-//                   src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/cube.png?alt=media&token=97f742ad-eec8-4298-a1c1-e82827ade604"
-//                   alt=""
-//                 />
-//                 <img
-//                   className="dot-icon"
-//                   src="https://parasrajain.netlify.app/images/dots.png"
-//                   alt=""
-//                 />
-//               </div>
-//             </Magnet> */}
 //           </div>
 //         </div>
 //       </div>
@@ -146,7 +113,6 @@
 // };
 
 // export default Home;
-
 
 import React from "react";
 import Particles from "../components/Particles";
@@ -172,7 +138,7 @@ const Home = () => {
       </div>
 
       {/* Content container - Reversed order on mobile */}
-      <div className="flex flex-col-reverse lg:flex-row absolute top-0 w-full h-full px-2  sm:p-4 gap-8 lg:gap-0 pt-16">
+      <div className="flex flex-col-reverse lg:flex-row absolute top-0 w-full h-full px-2 sm:p-4 gap-8 lg:gap-0 pt-16">
         {/* Left side - Text content */}
         <div className="lg:min-w-[60%] w-full lg:w-auto px-2 sm:p-5 flex items-center justify-center">
           <div className="flex mb-10 gap-6 sm:gap-10 flex-col text-2xl sm:text-3xl md:text-4xl mx-auto w-full md:w-[80%]">
@@ -199,14 +165,15 @@ const Home = () => {
                 rotationInterval={3000}
               />
             </div>
-            <div className="flex justify-center">
+            {/* Modified button container */}
+            <div className="flex justify-center lg:justify-start">
               <a
                 href="https://drive.google.com/file/d/1K7mD8Jwd_YZVMY53VS_8tIEiDju9ctog/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"
               >
-                <button className="btn rounded-sm max-w-[200px] lg:mx-0 lg:h-[60px]">
+                <button className="btn rounded-sm max-w-[200px] lg:h-[60px]">
                   <i className="animation font-sans font-bold"></i>My Resume
                   <i className="animation"></i>
                 </button>
