@@ -172,10 +172,10 @@ const Home = () => {
       </div>
 
       {/* Content container - Reversed order on mobile */}
-      <div className="flex flex-col-reverse lg:flex-row absolute top-0 w-full h-full p-2 sm:p-5 gap-10 lg:gap-0 pt-16">
+      <div className="flex flex-col-reverse lg:flex-row absolute top-0 w-full h-full px-2  sm:p-4 gap-8 lg:gap-0 pt-16">
         {/* Left side - Text content */}
-        <div className="lg:min-w-[60%] w-full lg:w-auto p-2 sm:p-5 flex items-center justify-center">
-          <div className="flex mb-10 gap-8 sm:gap-10 flex-col text-2xl sm:text-3xl md:text-4xl mx-auto w-full md:w-[80%]">
+        <div className="lg:min-w-[60%] w-full lg:w-auto px-2 sm:p-5 flex items-center justify-center">
+          <div className="flex mb-10 gap-6 sm:gap-10 flex-col text-2xl sm:text-3xl md:text-4xl mx-auto w-full md:w-[80%]">
             <div className="text-white text-center lg:text-left font-sans text-4xl font-bold lg:text-5xl">
               I'm Paras Rajain
             </div>
@@ -188,7 +188,7 @@ const Home = () => {
                   "Web Developer",
                   "Programmer",
                 ]}
-                mainClassName="px-2 sm:px-3 md:px-4 bg-cyan-300 text-black overflow-hidden py-1 sm:py-2 justify-center rounded-lg w-full"
+                mainClassName="px-2 sm:px-3 md:px-4 bg-cyan-300 text-black overflow-hidden py-1 sm:py-1 justify-center rounded-lg w-full"
                 staggerFrom={"last"}
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
@@ -216,8 +216,8 @@ const Home = () => {
         </div>
 
         {/* Right side - Image */}
-        <div className="lg:min-w-[40%] w-full p-2 sm:p-5 flex items-center justify-center mt-16 md:mt-0">
-          <div className="max-w-[70%] sm:max-w-[60%] lg:max-w-[50%] mx-auto">
+        <div className="lg:min-w-[40%] w-full p-2 sm:p-5 flex items-center justify-center mt-26 md:mt-0">
+          <div className="max-w-[70%] sm:max-w-[50%] lg:max-w-[50%] mx-auto">
             <div className="relative mx-auto">
               <Magnet padding={20} disabled={false} magnetStrength={5}>
                 <div className="bg-white rounded-sm">
