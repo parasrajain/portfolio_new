@@ -73,8 +73,7 @@
 //               <img className="rounded-full w-35" src={Img4} alt="" />
 //             </button>
 //           </div>
-          
-          
+
 //         </div>
 //       </div>
 //     </div>
@@ -92,14 +91,21 @@ import Img4 from "../assets/SkillImages/leetcode.png";
 
 const About = () => {
   const images = [
-    { id: 1, img: Img1 },
-    { id: 2, img: Img2 },
-    { id: 3, img: Img3 },
-    { id: 4, img: Img4 },
+    { id: 1, img: Img1, link: "https://www.codechef.com/users/paras_jaat" },
+    {
+      id: 2,
+      img: Img2,
+      link: "https://www.geeksforgeeks.org/user/parasrajain/",
+    },
+    { id: 3, img: Img3, link: "https://codeforces.com/profile/parasrajain7" },
+    { id: 4, img: Img4, link: "https://leetcode.com/u/paras_rajain/" },
   ];
 
   return (
-    <div id="About" className="relative bg-black min-h-screen w-full overflow-hidden flex flex-col ">
+    <div
+      id="About"
+      className="relative bg-black min-h-screen w-full overflow-hidden flex flex-col "
+    >
       {/* Background squares */}
       <div className="w-full h-screen absolute top-0 left-0">
         <Squares
@@ -123,16 +129,16 @@ const About = () => {
             strong foundation in full-stack development (MERN stack) and
             competitive programming. Experienced in building scalable web
             applications like Prescripto (doctor-patient appointment system) and
-            Pokedex App, with expertise in REST APIs, authentication systems, and
-            performance optimization. Passionate about solving complex problems,
-            with 550+ coding challenges solved and leadership experience as
-            Kabaddi Club Secretary. Committed to delivering efficient,
-            user-centric solutions with measurable impact.
+            Pokedex App, with expertise in REST APIs, authentication systems,
+            and performance optimization. Passionate about solving complex
+            problems, with 550+ coding challenges solved and leadership
+            experience as Kabaddi Club Secretary. Committed to delivering
+            efficient, user-centric solutions with measurable impact.
           </p>
         </div>
 
         {/* Coding Profiles section - 2x2 grid for mobile */}
-        <div className="w-full max-w-4xl text-center">
+        {/* <div className="w-full max-w-4xl text-center">
           <h2 className="font-sans text-2xl mt-10 sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-6 md:mt-10">
             Coding Profiles
           </h2>
@@ -148,6 +154,28 @@ const About = () => {
                   alt={`Coding Profile ${image.id}`} 
                 />
               </button>
+            ))}
+          </div>
+        </div> */}
+        <div className="w-full max-w-4xl text-center">
+          <h2 className="font-sans text-2xl mt-10 sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-6 md:mt-10">
+            Coding Profiles
+          </h2>
+          <div className="grid grid-cols-2 gap-6 w-fit mx-auto sm:flex sm:flex-wrap sm:justify-center sm:gap-6 md:gap-8 lg:gap-20 mt-10 md:mt-10">
+            {images.map((image) => (
+              <a
+                key={image.id}
+                href={image.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition-transform duration-200"
+              >
+                <img
+                  className="rounded-full w-20 h-20 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-cover border-2 border-white"
+                  src={image.img}
+                  alt={`Coding Profile ${image.id}`}
+                />
+              </a>
             ))}
           </div>
         </div>

@@ -93,7 +93,7 @@ const Skills = () => {
   //     </div>
   //   </div>
   
-  <div className="flex flex-col justify-center relative bg-black h-screen w-full overflow-hidden">
+  <div id="Skills" className="flex flex-col justify-center relative bg-black h-screen w-full overflow-hidden">
       {/* Background squares - unchanged from your original */}
       <div className="w-full h-screen absolute top-0 left-0">
         <Squares

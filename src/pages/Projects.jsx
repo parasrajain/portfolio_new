@@ -397,9 +397,12 @@ const Projects = () => {
                 Prescripto
               </h1>
               <p className="text-white my-4 md:my-6">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
-                voluptas aliquid commodi unde exercitationem odit at vero
-                perspiciatis quas quae.
+                Engineered a scalable MERN stack application to optimize
+                appointment scheduling workflows for doctors, patients, and
+                administrators, simulating 100+ users during stress testing.
+                Designed JWT-based authentication with role-based access control
+                (RBAC), enhancing security for multi-tier user roles and
+                reducing unauthorized access incidents by 40%.
               </p>
               <div className="flex flex-wrap gap-4 md:gap-10">
                 <button className="w-full sm:w-auto">
@@ -412,15 +415,24 @@ const Projects = () => {
                         ></path>
                       </svg>
                     </div>
-                    <div className="cubeg">
-                      <span className="sideg frontg">get source code</span>
-                      <span className="sideg topg">on github</span>
-                    </div>
+                    <a
+                      href="https://github.com/parasrajain/Prescripto_frontend"
+                      target="_blank"
+                    >
+                      <div className="cubeg">
+                        <span className="sideg frontg">get source code</span>
+                        <span className="sideg topg">on github</span>
+                      </div>
+                    </a>
                   </div>
                 </button>
 
                 <button className="w-full sm:w-auto">
-                  <a className="btn" href="#">
+                  <a
+                    target="_blank"
+                    className="btn"
+                    href="https://prescripto-frontend-7-8coi.onrender.com/"
+                  >
                     Preview
                   </a>
                 </button>
@@ -448,12 +460,15 @@ const Projects = () => {
             {/* right */}
             <div className="flex flex-col justify-between w-full lg:w-2/3 relative">
               <h1 className="text-white font-sans text-2xl md:text-3xl font-bold">
-                Prescripto
+                Pokedex
               </h1>
               <p className="text-white my-4 md:my-6">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
-                voluptas aliquid commodi unde exercitationem odit at vero
-                perspiciatis quas quae.
+                Built a responsive Pokedex application using React.js,
+                leveraging PokeAPI to dynamically fetch and display data for
+                1,000+ Pok ́emon, including stats, abilities, and high-resolution
+                sprites. Implemented a search feature allowing users to quickly
+                find Pok ́emon by name or ID, enhancing usability and reducing
+                search time by 50%.
               </p>
               <div className="flex flex-wrap gap-4 md:gap-10">
                 <button className="w-full sm:w-auto">
@@ -466,15 +481,24 @@ const Projects = () => {
                         ></path>
                       </svg>
                     </div>
-                    <div className="cubeg">
-                      <span className="sideg frontg">get source code</span>
-                      <span className="sideg topg">on github</span>
-                    </div>
+                    <a
+                      href="https://github.com/parasrajain/PokeDex"
+                      target="_blank"
+                    >
+                      <div className="cubeg">
+                        <span className="sideg frontg">get source code</span>
+                        <span className="sideg topg">on github</span>
+                      </div>
+                    </a>
                   </div>
                 </button>
 
                 <button className="w-full sm:w-auto">
-                  <a className="btn" href="#">
+                  <a
+                    className="btn"
+                    target="_blank"
+                    href="https://parasrajain-pokedex.netlify.app/"
+                  >
                     Preview
                   </a>
                 </button>
@@ -500,12 +524,13 @@ const Projects = () => {
             {/* right */}
             <div className="flex flex-col justify-between w-full lg:w-2/3 relative">
               <h1 className="text-white font-sans text-2xl md:text-3xl font-bold">
-                Prescripto
+                Weather Application
               </h1>
               <p className="text-white my-4 md:my-6">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
-                voluptas aliquid commodi unde exercitationem odit at vero
-                perspiciatis quas quae.
+                Programmed a sophisticated weather application that leveraged
+                three APIs for real-time data access.Created a mobile-friendly,
+                responsive UI with background themes based on weather
+                conditions, increasing user engagement.
               </p>
               <div className="flex flex-wrap gap-4 md:gap-10">
                 <button className="w-full sm:w-auto">
@@ -518,15 +543,17 @@ const Projects = () => {
                         ></path>
                       </svg>
                     </div>
+                    <a href="https://github.com/parasrajain/WeatherApp" target="_blank">
                     <div className="cubeg">
                       <span className="sideg frontg">get source code</span>
                       <span className="sideg topg">on github</span>
                     </div>
+                    </a>
                   </div>
                 </button>
 
                 <button className="w-full sm:w-auto">
-                  <a className="btn" href="#">
+                  <a className="btn" href="https://parasrajainweatherapp.netlify.app/" target="_blank">
                     Preview
                   </a>
                 </button>
@@ -549,12 +576,10 @@ const Projects = () => {
             {/* right */}
             <div className="flex flex-col justify-between w-full lg:w-2/3 relative">
               <h1 className="text-white font-sans text-2xl md:text-3xl font-bold">
-                Prescripto
+                Razorpay-Clone
               </h1>
               <p className="text-white my-4 md:my-6">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
-                voluptas aliquid commodi unde exercitationem odit at vero
-                perspiciatis quas quae.
+              Developed a responsive Razorpay UI clone using with modern frontend technologies. Recreated the payment gateway's clean interface with functional components including the payment form, amount selector, and checkout flow. Implemented smooth animations, form validation, and mobile-first design to mirror Razorpay's polished user experience.
               </p>
               <div className="flex flex-wrap gap-4 md:gap-10">
                 <button className="w-full sm:w-auto">
@@ -567,15 +592,17 @@ const Projects = () => {
                         ></path>
                       </svg>
                     </div>
+                    <a href="https://github.com/parasrajain/Razorpay-Clone" target="_blank">
                     <div className="cubeg">
                       <span className="sideg frontg">get source code</span>
                       <span className="sideg topg">on github</span>
                     </div>
+                    </a>
                   </div>
                 </button>
 
                 <button className="w-full sm:w-auto">
-                  <a className="btn" href="#">
+                  <a className="btn" target="_blank" href="https://razorpay-parasrajain.netlify.app/">
                     Preview
                   </a>
                 </button>
@@ -583,6 +610,7 @@ const Projects = () => {
             </div>
           </div>
 
+          <a href="https://github.com/parasrajain" target="_blank">
           <button type="button" class="btnm">
             <strong className="font-sans">More..</strong>
             <div id="container-starsm">
@@ -594,6 +622,7 @@ const Projects = () => {
               <div class="circlem"></div>
             </div>
           </button>
+          </a>
         </div>
       </div>
     </div>

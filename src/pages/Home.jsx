@@ -9,7 +9,10 @@ import TiltedCard from "../components/TitleCard";
 
 const Home = () => {
   return (
-    <div className="bg-black relative h-screen w-full overflow-hidden" id="Home">
+    <div
+      className="bg-black relative h-screen w-full overflow-hidden"
+      id="Home"
+    >
       {/* Background squares */}
       <div className="w-full h-screen">
         <Squares
@@ -49,10 +52,21 @@ const Home = () => {
                 rotationInterval={3000}
               />
             </div>
-            <button className="btn rounded-sm max-w-[200px] mx-auto lg:mx-0">
+            {/* <button  className="btn rounded-sm max-w-[200px] mx-auto lg:mx-0 lg:h-[60px]">
               <i className="animation font-sans  font-bold"></i>My Resume
               <i className="animation"></i>
-            </button>
+            </button> */}
+            <a
+              href="https://drive.google.com/file/d/1K7mD8Jwd_YZVMY53VS_8tIEiDju9ctog/view?usp=sharing" // Replace with your actual resume path
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block" // Preserves your button styling
+            >
+              <button className="btn rounded-sm max-w-[200px] mx-auto lg:mx-0 lg:h-[60px]">
+                <i className="animation font-sans font-bold"></i>My Resume
+                <i className="animation"></i>
+              </button>
+            </a>
           </div>
         </div>
 
@@ -60,49 +74,45 @@ const Home = () => {
         <div className="lg:min-w-[40%] w-full p-2 sm:p-5 flex items-center justify-center">
           <div className="max-w-[70%] sm:max-w-[60%] lg:max-w-[50%] mx-auto">
             <div className="relative mx-auto">
-            
-            <Magnet padding={20} disabled={false} magnetStrength={5}>
-              <div className="bg-white rounded-sm ">
-                {/* <img 
+              <Magnet padding={20} disabled={false} magnetStrength={5}>
+                <div className="bg-white rounded-sm ">
+                  {/* <img 
                   className="rounded-sm p-2 sm:p-3.5 w-full h-auto" 
                   src={ProfileImage} 
                   alt="Profile" 
                 /> */}
-                <TiltedCard
-              imageSrc={ProfileImage}
-              altText="Paras Rajain"
-              captionText="Paras Rajain"
-              containerHeight="380px"
-              containerWidth="300px"
-              imageHeight="380px"
-              imageWidth="300px"
-              rotateAmplitude={12}
-              scaleOnHover={1.2}
-              showMobileWarning={false}
-              showTooltip={true}
-              displayOverlayContent={true}
-              overlayContent={
-                <p className="tilted-card-demo-text"></p>
-              }
-            />
-                <img
-                  className="zigzag-icon"
-                  src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/zigzags.png?alt=media&token=48c9c028-b893-457a-8394-fb2a7aa31824"
-                  alt=""
-                />
-                <img
-                  className="cube-icon"
-                  src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/cube.png?alt=media&token=97f742ad-eec8-4298-a1c1-e82827ade604"
-                  alt=""
-                />
-                <img
-                  className="dot-icon"
-                  src="https://parasrajain.netlify.app/images/dots.png"
-                  alt=""
-                />
-              </div>
-
-            </Magnet>
+                  <TiltedCard
+                    imageSrc={ProfileImage}
+                    altText="Paras Rajain"
+                    captionText="Paras Rajain"
+                    containerHeight="380px"
+                    containerWidth="300px"
+                    imageHeight="380px"
+                    imageWidth="300px"
+                    rotateAmplitude={12}
+                    scaleOnHover={1.2}
+                    showMobileWarning={false}
+                    showTooltip={true}
+                    displayOverlayContent={true}
+                    overlayContent={<p className="tilted-card-demo-text"></p>}
+                  />
+                  <img
+                    className="zigzag-icon"
+                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/zigzags.png?alt=media&token=48c9c028-b893-457a-8394-fb2a7aa31824"
+                    alt=""
+                  />
+                  <img
+                    className="cube-icon"
+                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/cube.png?alt=media&token=97f742ad-eec8-4298-a1c1-e82827ade604"
+                    alt=""
+                  />
+                  <img
+                    className="dot-icon"
+                    src="https://parasrajain.netlify.app/images/dots.png"
+                    alt=""
+                  />
+                </div>
+              </Magnet>
             </div>
             {/* <Magnet padding={20} disabled={false} magnetStrength={5}>
               <div className="bg-white rounded-sm relative">

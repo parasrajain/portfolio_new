@@ -1118,3 +1118,7 @@ strong {
   background-color: rgba(219, 219, 219, 0.466);
   backdrop-filter: blur(4px);
 }
+
+html {
+  scroll-behavior: smooth;
+}
