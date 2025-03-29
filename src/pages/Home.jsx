@@ -161,7 +161,7 @@ const Home = () => {
   return (
     <div className="bg-black relative h-screen w-full overflow-hidden" id="Home">
       {/* Background squares */}
-      <div className="w-full h-screen">
+      <div className="w-full h-full">
         <Squares
           speed={0.5}
           squareSize={40}
@@ -172,8 +172,8 @@ const Home = () => {
       </div>
 
       {/* Content container - Reversed order on mobile */}
-      <div className="flex flex-col-reverse lg:flex-row absolute top-0 w-full h-full p-2 sm:p-5 gap-10 lg:gap-0 pt-16"> {/* Added pt-16 for navbar spacing */}
-        {/* Left side - Text content (now comes after image in DOM) */}
+      <div className="flex flex-col-reverse lg:flex-row absolute top-0 w-full h-full p-2 sm:p-5 gap-10 lg:gap-0 pt-16">
+        {/* Left side - Text content */}
         <div className="lg:min-w-[60%] w-full lg:w-auto p-2 sm:p-5 flex items-center justify-center">
           <div className="flex mb-10 gap-8 sm:gap-10 flex-col text-2xl sm:text-3xl md:text-4xl mx-auto w-full md:w-[80%]">
             <div className="text-white text-center lg:text-left font-sans text-4xl font-bold lg:text-5xl">
@@ -199,10 +199,9 @@ const Home = () => {
                 rotationInterval={3000}
               />
             </div>
-            {/* Centering the button */}
-            <div className="flex justify-center"> {/* Added flex and justify-center */}
+            <div className="flex justify-center">
               <a
-                href="https://drive.google.com/file/d/1K7mD8Jwd_YZVMY53VS_8tIEiDju9ctog/view?usp=sharing" // Replace with your actual resume path
+                href="https://drive.google.com/file/d/1K7mD8Jwd_YZVMY53VS_8tIEiDju9ctog/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"
@@ -216,8 +215,8 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Right side - Image (now appears first on mobile) */}
-        <div className="lg:min-w-[40%] w-full p-2 sm:p-5 flex items-center justify-center">
+        {/* Right side - Image */}
+        <div className="lg:min-w-[40%] w-full p-2 sm:p-5 flex items-center justify-center mt-16 md:mt-0">
           <div className="max-w-[70%] sm:max-w-[60%] lg:max-w-[50%] mx-auto">
             <div className="relative mx-auto">
               <Magnet padding={20} disabled={false} magnetStrength={5}>
